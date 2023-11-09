@@ -13,7 +13,7 @@ import (
 
 const catBreedsURL = "https://catfact.ninja/breeds"
 
-// ConvertToCatBreeds преобразует данные в структуру CatBreed
+// Получение данных о породах кошек с API
 func FetchCatBreeds(url string) ([]models.CatBreed, error) {
 	// Получение данных из API
 	resp, err := http.Get(url)
